@@ -1,6 +1,6 @@
 # talosfleet-recipes
 
-Recipes for AutoPkg maintained by Talos Fleet Management (https://www.talosfleet.com). If you use them, click the start button above to show your support!
+Recipes for AutoPkg maintained by Talos Fleet Management (https://www.talosfleet.com). If you use them, click the *star* button above to show your support!
 
 
 ## Installation
