@@ -8,7 +8,7 @@ Recipes for AutoPkg maintained by Talos Fleet Management (https://www.talosfleet
 To add this repository to your Mac (with Git, AutoPkg and [JSSImporter](https://github.com/jssimporter/JSSImporter) already installed), run this command:
 
 ```
-autopkg repo-add talosfleet-recipes
+autopkg repo-add mikestechshop/talosfleet-autopkg-recipes
 ```
 
 ## Dependencies
