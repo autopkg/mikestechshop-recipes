@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads the current release version of Discord and builds a package.</string>
 	<key>Identifier</key>
-	<string>com.talosfleet.pkg.Discord</string>
+	<string>com.github.talosfleet.pkg.Discord</string>
 	<key>Input</key>
 	<dict>
 		<key>BUNDLE_ID</key>
