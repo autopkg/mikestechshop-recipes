@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads the current release version of RingCentral Phone and builds a package.</string>
+	<string>Downloads the current release version of RingCentral Phone for Mac and builds a package.</string>
 	<key>Identifier</key>
-	<string>com.github.talosfleet.pkg.RingCentral</string>
+	<string>com.github.autopkg.talosfleet-recipes.pkg.RingCentral</string>
 	<key>Input</key>
 	<dict>
 		<key>BUNDLE_ID</key>
@@ -14,7 +14,7 @@
 		<string>RingCentral Phone</string>
 	</dict>
 	<key>MinimumVersion</key>
-	<string>1.0.0</string>
+	<string>1.0.4</string>
 	<key>ParentRecipe</key>
 	<string>com.github.bradclare.download.ringcentral</string>
 	<key>Process</key>
