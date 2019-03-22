@@ -32,7 +32,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>destination_path</key>
-				<string>%RECIPE_CACHE_DIR%/unpack</string>
+				<string>%RECIPE_CACHE_DIR%/unpack/Hub Desktop.app</string>
 				<key>pkg_payload_path</key>
 				<string>%RECIPE_CACHE_DIR%/expand/inner.pkg/Payload</string>
 			</dict>
@@ -43,7 +43,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>input_plist_path</key>
-				<string>%RECIPE_CACHE_DIR%/unpack/Contents/Info.plist</string>
+				<string>%RECIPE_CACHE_DIR%/unpack/Hub Desktop.app/Contents/Info.plist</string>
 				<key>plist_version_key</key>
 				<string>PLTDisplayVersion</string>
 			</dict>
