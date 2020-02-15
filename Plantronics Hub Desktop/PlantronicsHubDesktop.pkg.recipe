@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads latest Plantronics Hub Desktop disk image.</string>
 	<key>Identifier</key>
-	<string>com.github.autopkg.talosfleet-recipes.pkg.PlantronicsHubDesktop</string>
+	<string>com.github.autopkg.mikestechshop.pkg.PlantronicsHubDesktop</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>

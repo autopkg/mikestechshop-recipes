@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads the current release of Dockutil from Github.</string>
 	<key>Identifier</key>
-	<string>com.github.autopkg.talosfleet-recipes.download.dockutil</string>
+	<string>com.github.autopkg.mikestechshop.download.dockutil</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>

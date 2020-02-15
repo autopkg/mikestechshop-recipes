@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads the current release version of RingCentral Phone for Mac and builds a package.</string>
 	<key>Identifier</key>
-	<string>com.github.autopkg.talosfleet-recipes.pkg.RingCentral</string>
+	<string>com.github.autopkg.mikestechshop.pkg.RingCentral</string>
 	<key>Input</key>
 	<dict>
 		<key>BUNDLE_ID</key>

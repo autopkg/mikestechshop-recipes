@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Pull pkg for Snapz Pro with an appended version number.</string>
 	<key>Identifier</key>
-	<string>com.github.autopkg.talosfleet-recipes.SnapzPro.pkg</string>
+	<string>com.github.autopkg.mikestechshop.pkg.SnapzPro</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
