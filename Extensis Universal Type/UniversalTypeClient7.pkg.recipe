@@ -35,6 +35,14 @@
 		<dict>
 			<key>Arguments</key>
 			<dict>
+				<key>pattern</key>
+				<string>%RECIPE_CACHE_DIR%/zip/*.pkg</string>
+			</dict>
+			<key>Processor</key>
+			<string>FileFinder</string>
+		<dict>
+			<key>Arguments</key>
+			<dict>
 				<key>flat_pkg_path</key>
 				<string>%RECIPE_CACHE_DIR%/zip/*</string>
 				<key>destination_path</key>
