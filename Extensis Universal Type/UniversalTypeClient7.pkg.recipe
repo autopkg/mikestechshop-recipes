@@ -57,13 +57,15 @@
 		<dict>
 			<key>Arguments</key>
 			<dict>
-				<key>extract_root</key>
+				<key>destination_path</key>
 				<string>%RECIPE_CACHE_DIR%/extract_root</string>
-				<key>pkg_path</key>
+				<key>pkg_payload_path</key>
 				<string>%RECIPE_CACHE_DIR%/extract/universalTypeClient.pkg</string>
+				<key>purge_destination</key>
+				<true/>
 			</dict>
 			<key>Processor</key>
-			<string>PkgExtractor</string>
+			<string>PkgPayloadUnpacker</string>
 		</dict>
 	</array>
 </dict>
