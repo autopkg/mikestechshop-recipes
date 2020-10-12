@@ -68,7 +68,7 @@
 			<string>PkgPayloadUnpacker</string>
 		</dict>
 		<dict>
-			<key>Process</key>
+			<key>Processor</key>
 			<string>Versioner</string>
 			<key>Arguments</key>
 			<dict>
