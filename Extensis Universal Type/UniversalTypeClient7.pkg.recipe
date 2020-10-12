@@ -5,13 +5,13 @@
 	<key>Description</key>
 	<string>Downloads the current release version of Universal Type Client v7 and builds a package.</string>
 	<key>Identifier</key>
-	<string>com.github.autopkg.mikestechshop.pkg.UniversalTypeClient7</string>
+	<string>com.github.mikestechshop.pkg.UniversalTypeClient7</string>
 	<key>Input</key>
 	<dict>
 		<key>BUNDLE_ID</key>
-		<string>com.hnc.Discord</string>
+		<string>com.extensis.UniversalTypeClient</string>
 		<key>NAME</key>
-		<string>Discord</string>
+		<string>UniversalTypeClient</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.4</string>
@@ -24,63 +24,19 @@
 			<dict>
 				<key>archive_format</key>
 				<string>zip</string>
+				<key>purge_destination</key>
+				<true/>
 			</dict>
 			<key>Processor</key>
 			<string>Unarchiver</string>
 		</dict>
-<!--		<dict>
+		<!--<dict>
 			<key>Arguments</key>
 			<dict>
-				<key>pkgdirs</key>
-				<dict>
-					<key>Applications</key>
-					<string>0775</string>
-				</dict>
-				<key>pkgroot</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%</string>
+				<key>source_pkg</key>
 			</dict>
 			<key>Processor</key>
-			<string>PkgRootCreator</string>
-		</dict>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>destination_path</key>
-				<string>%pkgroot%/Applications/%app_name%</string>
-				<key>source_path</key>
-				<string>%pathname%/%app_name%</string>
-			</dict>
-			<key>Processor</key>
-			<string>Copier</string>
-		</dict>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>pkg_request</key>
-				<dict>
-					<key>chown</key>
-					<array>
-						<dict>
-							<key>group</key>
-							<string>admin</string>
-							<key>path</key>
-							<string>Applications</string>
-							<key>user</key>
-							<string>root</string>
-						</dict>
-					</array>
-					<key>id</key>
-					<string>%bundleid%</string>
-					<key>options</key>
-					<string>purge_ds_store</string>
-					<key>pkgname</key>
-					<string>%NAME%-%version%</string>
-					<key>version</key>
-					<string>%version%</string>
-				</dict>
-			</dict>
-			<key>Processor</key>
-			<string>PkgCreator</string>
+			<string>PkgCopier</string>
 		</dict>-->
 	</array>
 </dict>
