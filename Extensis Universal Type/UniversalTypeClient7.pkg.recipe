@@ -36,7 +36,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>flat_pkg_path</key>
-				<string>%RECIPE_CACHE_DIR%/zip/Univeral Type Client 7*.pkg</string>
+				<string>%RECIPE_CACHE_DIR%/zip/*</string>
 				<key>destination_path</key>
 				<string>%RECIPE_CACHE_DIR%/extract</string>
 				<key>purge_destination</key>
