@@ -54,6 +54,17 @@
 			<key>Processor</key>
 			<string>FlatPkgUnpacker</string>
 		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>extract_root</key>
+				<string>%RECIPE_CACHE_DIR%/extract_root</string>
+				<key>pkg_path</key>
+				<string>%RECIPE_CACHE_DIR%/extract/universalTypeClient.pkg</string>
+			</dict>
+			<key>Processor</key>
+			<string>PkgExtractor</string>
+		</dict>
 	</array>
 </dict>
 </plist>
