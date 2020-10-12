@@ -67,6 +67,15 @@
 			<key>Processor</key>
 			<string>PkgPayloadUnpacker</string>
 		</dict>
+		<dict>
+			<key>Process</key>
+			<string>Versioner</string>
+			<key>Arguments</key>
+			<dict>
+				<key>input_plist_path</key>
+				<string>%RECIPE_CACHE_DIR%/extract_root/Universal Type Client.app/Contents/Info.plist</string>
+			</dict>
+		</dict>
 	</array>
 </dict>
 </plist>
