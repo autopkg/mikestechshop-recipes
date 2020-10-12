@@ -90,7 +90,7 @@
 		<dict>
 			<key>Arguments</key>
 			<dict>
-				<key>destination_path</key>
+				<key>pkg_path</key>
 				<string>%RECIPE_CACHE_DIR%/%name%-%version%.pkg</string>
 				<key>source_pkg</key>
 				<string>%found_filename%</string>
