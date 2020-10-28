@@ -1,6 +1,6 @@
 # mikestechshop-recipes
 
-Recipes for AutoPkg maintained by MTS Professional Services (https://www.mtsproservices.com). If you use them, click the *star* button above to show your support!
+Recipes for AutoPkg maintained by Talos Fleet Management (https://www.talosfleet.com). If you use them, click the *star* button above to show your support!
 
 
 ## Installation
@@ -18,4 +18,4 @@ Most of these PKG recipes have parent download recipes that live in another repo
 
 ## Known issues
 
-If you're having a problem with one of the recipes, [check the issues](https://github.com/autopkg/talosfleet-recipes/issues) to see whether a known problem exists. If not, please [submit an issue](https://github.com/autopkg/talosfleet-recipes/issues/new) so we can investigate.
+If you're having a problem with one of the recipes, [check the issues](https://github.com/autopkg/mikestechshop-recipes/issues) to see whether a known problem exists. If not, please [submit an issue](https://github.com/autopkg/mikestechshop-recipes/issues/new) so we can investigate.
