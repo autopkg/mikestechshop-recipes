@@ -8,8 +8,6 @@
 	<string>com.github.autopkg.mikestechshop.pkg.Discord</string>
 	<key>Input</key>
 	<dict>
-		<key>BUNDLE_ID</key>
-		<string>com.hnc.Discord</string>
 		<key>NAME</key>
 		<string>Discord</string>
 	</dict>

@@ -8,8 +8,6 @@
 	<string>com.github.autopkg.mikestechshop.pkg.RingCentral</string>
 	<key>Input</key>
 	<dict>
-		<key>BUNDLE_ID</key>
-		<string>us.zoom.ringcentral</string>
 		<key>NAME</key>
 		<string>RingCentral Phone</string>
 	</dict>
