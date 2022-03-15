@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Description</key>
+	<string>Downloads latest Datto RMM per Site ID, which must be provided</string>
+	<key>Identifier</key>
+	<string>com.github.autopkg.mikestechshop.download.DattoRMM</string>
+	<key>Input</key>
+	<dict>
+		<key>SITE_DOMAIN</key>
+		<string>concord.centrastage.net</string>
+		<key>SITE_ID</key>
+		<string>4ab06998-94c1-4109-897c-721e9db5d283</string>
+		<key>NAME</key>
+		<string>DattoRMM</string>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>1.0.4</string>
+	<key>Process</key>
+	<array>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>filename</key>
+				<string>%NAME%.zip</string>
+				<key>url</key>
+				<string>https://%SITE_DOMAIN%/csm/profile/downloadMacAgent/%SITE_ID%</string>
+			</dict>
+			<key>Processor</key>
+			<string>URLDownloader</string>
+		</dict>
+		<dict>
+			<key>Processor</key>
+			<string>EndOfCheckPhase</string>
+		</dict>
+<!--		<dict>
+			<key>Processor</key>
+			<string>CodeSignatureVerifier</string>
+			<key>Arguments</key>
+			<dict>
+				<key>expected_authority_names</key>
+				<array>
+					<string>Developer ID Installer: Plantronics, Inc. (SKWK2Q7JJV)</string>
+					<string>Developer ID Certification Authority</string>
+					<string>Apple Root CA</string>
+				</array>
+				<key>input_path</key>
+				<string>%pathname%/Plantronics Software.pkg</string>
+			</dict>
+		</dict>-->
+	</array>
+</dict>
+</plist>
