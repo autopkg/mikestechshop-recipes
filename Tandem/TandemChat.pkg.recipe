@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Builds a package from a downloaded Tandem Chat download.</string>
+    <string>Builds a package for Tandem Chat</string>
     <key>Identifier</key>
     <string>com.github.autopkg.mikestechshop.pkg.TandemChat</string>
     <key>Input</key>
@@ -12,74 +12,31 @@
         <string>Tandem</string>
     </dict>
     <key>MinimumVersion</key>
-    <string>1.4.1</string>
+    <string>2.1</string>
     <key>ParentRecipe</key>
     <string>com.github.autopkg.mikestechshop.download.TandemChat</string>
     <key>Process</key>
     <array>
-        <dict>
-            <key>Processor</key>
-            <string>Versioner</string>
-            <key>Arguments</key>
-            <dict>
-                <key>input_plist_path</key>
-                <string>%RECIPE_CACHE_DIR%/Unarchiver/%NAME%.app/Contents/Info.plist</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>Processor</key>
-            <string>PkgRootCreator</string>
-            <key>Arguments</key>
-            <dict>
-                <key>pkgroot</key>
-                <string>%RECIPE_CACHE_DIR%/%NAME%</string>
-                <key>pkgdirs</key>
-                <dict>
-                    <key>Applications</key>
-                    <string>0775</string>
-                </dict>
-            </dict>
-        </dict>
-        <dict>
-            <key>Processor</key>
-            <string>Copier</string>
-            <key>Arguments</key>
-            <dict>
-                <key>source_path</key>
-                <string>%RECIPE_CACHE_DIR%/Unarchiver/%NAME%.app</string>
-                <key>destination_path</key>
-                <string>%RECIPE_CACHE_DIR%/%NAME%/Applications/%NAME%.app</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>Processor</key>
-            <string>PkgCreator</string>
-            <key>Arguments</key>
-            <dict>
-                <key>pkg_request</key>
-                <dict>
-                    <key>pkgname</key>
-                    <string>%NAME%-%version%</string>
-                    <key>pkgdir</key>
-                    <string>%RECIPE_CACHE_DIR%</string>
-                    <key>id</key>
-                    <string>tandem.app.pkg</string>
-                    <key>options</key>
-                    <string>purge_ds_store</string>
-                    <key>chown</key>
-                    <array>
-                        <dict>
-                            <key>path</key>
-                            <string>Applications</string>
-                            <key>user</key>
-                            <string>root</string>
-                            <key>group</key>
-                            <string>admin</string>
-                        </dict>
-                    </array>
-                </dict>
-            </dict>
-        </dict>
+    	<dict>
+    		<key>Processor</key>
+    		<string>Versioner</string>
+    		<key>Arguments</key>
+    		<dict>
+    			<key>input_plist_path</key>
+    			<string>%RECIPE_CACHE_DIR%/unpack/Tandem.app/Contents/Info.plist</string>
+    		</dict>
+    	</dict>
+    	<dict>
+    		<key>Processor</key>
+    		<string>AppPkgCreator</string>
+    		<key>Arguments</key>
+    		<dict>
+    			<key>app_path</key>
+    			<string>%RECIPE_CACHE_DIR%/unpack/Tandem.app</string>
+    			<key>pkg_path</key>
+    			<string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
+    		</dict>
+    	</dict>
     </array>
 </dict>
 </plist>
