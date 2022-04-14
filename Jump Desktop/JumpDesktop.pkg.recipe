@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Builds a package from a downloaded Dialpad download.</string>
+    <string>Builds a package from a downloaded Jump Desktop download.</string>
     <key>Identifier</key>
     <string>com.github.autopkg.mikestechshop.pkg.JumpDesktop</string>
     <key>Input</key>
@@ -19,11 +19,22 @@
     <array>
         <dict>
         		<key>Processor</key>
+        		<string>Versioner</string>
+        		<key>Arguments</key>
+        		<dict>
+        			<key>input_plist_path</key>
+	        		<string>%RECIPE_CACHE_DIR%/unpack/Jump Desktop.app/Contents/Info.plist</string>
+	        	</dict>
+		</dict>
+        <dict>
+        		<key>Processor</key>
         		<string>AppPkgCreator</string>
         		<key>Arguments</key>
         		<dict>
         			<key>app_path</key>
 	        		<string>%RECIPE_CACHE_DIR%/unpack/Jump Desktop.app</string>
+	        		<key>pkg_path</key>
+	        		<string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
 	        		<key>force_pkg_build</key>
 	        		<true/>
 	        	</dict>

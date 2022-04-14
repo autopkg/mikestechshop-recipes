@@ -23,7 +23,7 @@
 				<key>url</key>
 				<string>https://jumpdesktop.com/downloads/jdmac</string>
 				<key>filename</key>
-				<string>%NAME%.zip</string>
+				<string>JumpDesktop.zip</string>
 			</dict>
 		</dict>
 		<dict>
@@ -46,6 +46,8 @@
                 <string>%RECIPE_CACHE_DIR%/unpack/Jump Desktop.app</string>
                 <key>requirement</key>
                 <string>anchor apple generic and identifier "com.p5sys.jump.mac.viewer.web" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "2HCKV38EEC")</string>
+                <key>strict_verification</key>
+                <true/>
             </dict>
         </dict>
         <dict>
