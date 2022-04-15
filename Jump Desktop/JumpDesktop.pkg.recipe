@@ -35,8 +35,6 @@
 	        		<string>%RECIPE_CACHE_DIR%/unpack/Jump Desktop.app</string>
 	        		<key>pkg_path</key>
 	        		<string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
-	        		<key>force_pkg_build</key>
-	        		<true/>
 	        	</dict>
 		</dict>
 		<dict>
