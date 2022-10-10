@@ -9,7 +9,7 @@
 	<key>Input</key>
 	<dict>
 		<key>DOWNLOAD_URL</key>
-		<string>https://1.1.1.1/Cloudflare_WARP.zip</string>
+		<string>https://1111-releases.cloudflareclient.com/mac/Cloudflare_WARP.zip</string>
 		<key>NAME</key>
 		<string>CloudFlareWarp</string>
 	</dict>
