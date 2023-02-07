@@ -3,7 +3,13 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads latest Asana DMG</string>
+    <string>Downloads latest Asana DMG.
+
+Download URLs
+arm64: https://desktop-downloads.asana.com/darwin_arm64/prod/latest/Asana.dmg
+x86_64: https://desktop-downloads.asana.com/darwin_x64/prod/latest/Asana.dmg
+universal (default): https://desktop-downloads.asana.com/darwin_universal/prod/latest/Asana.dmg
+    </string>
     <key>Identifier</key>
     <string>com.github.mikestechshop.download.asana</string>
     <key>Input</key>
@@ -11,7 +17,7 @@
         <key>NAME</key>
         <string>Asana</string>
         <key>DOWNLOAD_URL</key>
-        <string>https://desktop-downloads.asana.com/darwin_x64/prod/latest/Asana.dmg</string>
+        <string>https://desktop-downloads.asana.com/darwin_universal/prod/latest/Asana.dmg</string>
     </dict>
     <key>MinimumVersion</key>
     <string>2.0</string>
