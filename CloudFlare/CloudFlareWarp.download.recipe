@@ -8,8 +8,6 @@
 	<string>com.github.mikestechshop.download.CloudFlareWarp</string>
 	<key>Input</key>
 	<dict>
-		<key>DOWNLOAD_URL</key>
-		<string>https://1111-releases.cloudflareclient.com/mac/Cloudflare_WARP.zip</string>
 		<key>NAME</key>
 		<string>CloudFlareWarp</string>
 	</dict>
@@ -23,7 +21,7 @@
 				<key>filename</key>
 				<string>%NAME%.zip</string>
 				<key>url</key>
-				<string>%DOWNLOAD_URL%</string>
+				<string>https://1111-releases.cloudflareclient.com/mac/Cloudflare_WARP.zip</string>
 			</dict>
 			<key>Processor</key>
 			<string>URLDownloader</string>
