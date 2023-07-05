@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Downloads latest Iconik Desktop Agent. You MUST specify the architecture (Either x64 or arm64) in your override.</string>
+    <key>Identifier</key>
+    <string>com.github.mikestechshop.download.IconikAgent</string>
+    <key>Input</key>
+    <dict>
+        <key>NAME</key>
+        <string>IconikAgent</string>
+        <key>ARCH</key>
+        <string>x64 or arm64</string>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>2.1</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Processor</key>
+            <string>URLDownloader</string>
+            <key>Arguments</key>
+            <dict>
+                <key>url</key>
+                <string>https://packages.iconik.io/agent/darwin/%ARCH%/iconik%20Agent-%ARCH%-latest.dmg</string>
+                <key>filename</key>
+                <string>%NAME%-%ARCH%.dmg</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>CodeSignatureVerifier</string>
+            <key>Arguments</key>
+            <dict>
+                <key>input_path</key>
+                <string>%pathname%/iconik Agent.app</string>
+                <key>strict_verification</key>
+                <true/>
+                <key>requirement</key>
+                <string>identifier "io.iconik.desktopagent" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "5LDVD44GKB"</string>
+            </dict>
+        </dict>
+		<dict>
+			<key>Processor</key>
+			<string>EndOfCheckPhase</string>
+		</dict>
+    </array>
+</dict>
+</plist>
