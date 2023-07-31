@@ -20,7 +20,6 @@
     <key>MinimumVersion</key>
     <string>1.4.1</string>
     <key>Process</key>
-
     <array>
         <dict>
             <key>Processor</key>
