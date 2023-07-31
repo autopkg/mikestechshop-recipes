@@ -2,20 +2,25 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+    <key>Comment</key>
+    <string>Set ARCHITECTURE "x64" to download the Intel or "arm64" for Apple Silicon.</string>
     <key>Description</key>
     <string>Downloads the latest Dialpad.</string>
     <key>Identifier</key>
     <string>com.github.autopkg.mikestechshop.download.Dialpad</string>
     <key>Input</key>
     <dict>
+        <key>ARCHITECTURE</key>
+        <string>x64</string>
+        <key>DOWNLOAD_URL</key>
+        <string>https://storage.googleapis.com/dialpad_native/osx/%ARCHITECTURE%/Dialpad.dmg</string>
         <key>NAME</key>
         <string>Dialpad</string>
-        <key>DOWNLOAD_URL</key>
-        <string>https://storage.googleapis.com/dialpad_native/osx/Dialpad.dmg</string>
     </dict>
     <key>MinimumVersion</key>
     <string>1.4.1</string>
     <key>Process</key>
+
     <array>
         <dict>
             <key>Processor</key>
