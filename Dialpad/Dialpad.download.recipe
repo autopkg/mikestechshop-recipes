@@ -11,7 +11,7 @@
         <key>NAME</key>
         <string>Dialpad</string>
         <key>DOWNLOAD_URL</key>
-        <string>https://storage.googleapis.com/dialpad_native/osx/Dialpad.dmg</string>
+        <string>https://storage.googleapis.com/dialpad_native/osx/x64/Dialpad.dmg</string>
     </dict>
     <key>MinimumVersion</key>
     <string>1.4.1</string>
