@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Description</key>
+	<string>Download and Package the latest version of Bluescape</string>
+	<key>Identifier</key>
+	<string>com.github.mikestechshop.pkg.Bluescape</string>
+	<key>Input</key>
+	<dict>
+		<key>NAME</key>
+		<string>Bluescape</string>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.mikestechshop.download.Bluescape</string>
+	<key>MinimumVersion</key>
+	<string>1.4.1</string>
+	<key>Process</key>
+	<array>
+		<dict>
+			<key>Processor</key>
+			<string>AppDmgVersioner</string>
+			<key>Arguments</key>
+			<dict>
+				<key>dmg_path</key>
+				<string>%RECIPE_CACHE_DIR%/downloads/%NAME%.dmg</string>
+				<key>app_name</key>
+				<string>Bluescape.app</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>Processor</key>
+			<string>AppPkgCreator</string>
+			<key>Arguments</key>
+			<dict>
+				<key>app_path</key>
+				<string>%RECIPE_CACHE_DIR%/downloads/%NAME%.dmg/Bluescape.app</string>
+				<key>pkg_path</key>
+				<string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
