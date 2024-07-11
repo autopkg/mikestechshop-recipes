@@ -27,21 +27,12 @@
 			<string>Versioner</string>
 		</dict>
 		<dict>
-            <key>Arguments</key>
-            <dict>
-                <key>pattern</key>
-                <string>%RECIPE_CACHE_DIR%/unzip/Cloudflare*.pkg</string>
-            </dict>
-            <key>Processor</key>
-            <string>FileFinder</string>
-        </dict>
-		<dict>
 			<key>Arguments</key>
 			<dict>
 				<key>pkg_path</key>
 				<string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
 				<key>source_pkg</key>
-				<string>%found_filename%</string>
+				<string>%pathname%</string>
 			</dict>
 			<key>Processor</key>
 			<string>PkgCopier</string>
