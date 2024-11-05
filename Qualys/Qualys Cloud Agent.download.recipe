@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Description</key>
+	<string>Downloads the latest version of the Qualys Cloud Agent pkg via Qualys's API.
+You must provide your Qualys Cloud Agent API Username and Password. This account requires the Access Permission "API Access" and Asset Management Permission "Read Asset" in the Qualys console. You must provide your Qualys API Server. The API server URL that you should use for API requests depends on the platform where your Qualys account is located.</string>
+	<key>Identifier</key>
+	<string>com.github.talosfleet.download.QualysCloudAgent</string>
+	<key>Input</key>
+	<dict>
+		<key>NAME</key>
+		<string>Qualys Cloud Agent</string>
+		<key>QUALYS_API_URL</key>
+		<string>https://api.crowdstrike.com</string>
+		<key>QUALYS_USERNAME</key>
+		<string></string>
+		<key>QUALYS_PASSWORD</key>
+		<string></string>
+		<key>QUALYS_ARCH</key>
+		<string>arm64</string>
+	</dict>
+	<key>Process</key>
+	<array>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>qualys_api_url</key>
+				<string>%QUALYS_API_URL%</string>
+				<key>qualys_username</key>
+				<string>%QUALYS_USERNAME%</string>
+				<key>qualys_password</key>
+				<string>%QUALYS_PASSWORD%</string>
+				<key>qualys_arch</key>
+				<string>%QUALYS_ARCH%</string>
+			</dict>
+			<key>Processor</key>
+			<string>QualysURLProvider</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>filename</key>
+				<string>%NAME%-%version%.pkg</string>
+				<key>request_headers</key>
+				<dict>
+					<key>accept</key>
+					<string>application/json</string>
+					<key>authorization</key>
+					<string>bearer %access_token%</string>
+				</dict>
+				<key>url</key>
+				<string>%download_url%</string>
+			</dict>
+			<key>Processor</key>
+			<string>URLDownloader</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>expected_authority_names</key>
+				<array>
+					<string>Developer ID Installer: CrowdStrike Inc. (X9E956P446)</string>
+					<string>Developer ID Certification Authority</string>
+					<string>Apple Root CA</string>
+				</array>
+				<key>input_path</key>
+				<string>%pathname%</string>
+			</dict>
+			<key>Processor</key>
+			<string>CodeSignatureVerifier</string>
+		</dict>
+		<dict>
+			<key>Processor</key>
+			<string>EndOfCheckPhase</string>
+		</dict>
+	</array>
+</dict>
+</plist>
