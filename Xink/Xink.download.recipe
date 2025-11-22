@@ -26,7 +26,11 @@
                 <string>%NAME%.pkg</string>
             </dict>
         </dict>
-         <dict>
+        <dict>
+            <key>Processor</key>
+            <string>EndOfCheckPhase</string>
+        </dict>
+        <dict>
             <key>Processor</key>
             <string>FlatPkgUnpacker</string>
             <key>Arguments</key>
@@ -37,7 +41,7 @@
                 <string>%RECIPE_CACHE_DIR%/unpack</string>
             </dict>
         </dict>
-         <dict>
+        <dict>
             <key>Processor</key>
             <string>PkgPayloadUnpacker</string>
             <key>Arguments</key>
@@ -48,7 +52,7 @@
                 <string>%RECIPE_CACHE_DIR%/payload</string>
             </dict>
         </dict>
-       <dict>
+        <dict>
             <key>Processor</key>
             <string>CodeSignatureVerifier</string>
             <key>Arguments</key>
@@ -62,10 +66,6 @@
                 <key>deep_verification</key>
                 <true/>
             </dict>
-        </dict>
-        <dict>
-            <key>Processor</key>
-            <string>EndOfCheckPhase</string>
         </dict>
     </array>
 </dict>
