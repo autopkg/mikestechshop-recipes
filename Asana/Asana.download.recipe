@@ -36,6 +36,10 @@ universal (default): https://desktop-downloads.asana.com/darwin_universal/prod/l
         </dict>
         <dict>
             <key>Processor</key>
+            <string>EndOfCheckPhase</string>
+        </dict>
+        <dict>
+            <key>Processor</key>
             <string>CodeSignatureVerifier</string>
             <key>Arguments</key>
             <dict>
