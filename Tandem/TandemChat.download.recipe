@@ -27,6 +27,10 @@
             </dict>
         </dict>
         <dict>
+            <key>Processor</key>
+            <string>EndOfCheckPhase</string>
+        </dict>
+        <dict>
         	<key>Processor</key>
         	<string>Unarchiver</string>
         	<key>Arguments</key>
@@ -49,10 +53,6 @@
                 <key>strict_verification</key>
                 <true/>
             </dict>
-        </dict>
-        <dict>
-            <key>Processor</key>
-            <string>EndOfCheckPhase</string>
         </dict>
     </array>
 </dict>
