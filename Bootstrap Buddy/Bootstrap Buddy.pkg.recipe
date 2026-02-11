@@ -12,7 +12,7 @@
 		<string>Bootstrap Buddy</string>
 	</dict>
 	<key>MinimumVersion</key>
-	<string>0.5.0</string>
+	<string>2.3</string>
 	<key>ParentRecipe</key>
 	<string>com.github.mikestechshop.download.BootstrapBuddy</string>
 	<key>Process</key>
