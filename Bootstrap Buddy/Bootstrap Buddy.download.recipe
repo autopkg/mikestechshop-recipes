@@ -3,32 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads the current release of Dockutil from Github.</string>
+	<string>Downloads the current release of Bootstrap Buddy from Github.</string>
 	<key>Identifier</key>
-	<string>com.github.autopkg.mikestechshop.download.dockutil</string>
+	<string>com.github.mikestechshop.download.BootstrapBuddy</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
-		<string>dockutil</string>
+		<string>Bootstrap Buddy</string>
 	</dict>
 	<key>MinimumVersion</key>
-	<string>1.1</string>
+	<string>2.3</string>
 	<key>Process</key>
 	<array>
-        <dict>
-            <key>Processor</key>
-            <string>DeprecationWarning</string>
-            <key>Arguments</key>
-            <dict>
-                <key>warning_message</key>
-                <string>Consider switching to the Dockutil recipes in the jessepeterson-recipes repo. This recipe is deprecated and will be removed in the future.</string>
-            </dict>
-        </dict>
 		<dict>
 			<key>Arguments</key>
 			<dict>
 				<key>github_repo</key>
-				<string>kcrawford/dockutil</string>
+				<string>Inetum-Poland/bootstrap-buddy</string>
 			</dict>
 			<key>Processor</key>
 			<string>GitHubReleasesInfoProvider</string>
@@ -47,19 +38,19 @@
 			<string>EndOfCheckPhase</string>
 		</dict>
 		<dict>
-			<key>Processor</key>
-			<string>CodeSignatureVerifier</string>
 			<key>Arguments</key>
 			<dict>
-				<key>input_path</key>
-				<string>%pathname%</string>
 				<key>expected_authority_names</key>
 				<array>
-					<string>Developer ID Installer: Kyle Crawford (Z5J8CJBUWC)</string>
+					<string>Developer ID Installer: Adrian Walaszek (C8GR948K5Q)</string>
 					<string>Developer ID Certification Authority</string>
 					<string>Apple Root CA</string>
 				</array>
+				<key>input_path</key>
+				<string>%pathname%</string>
 			</dict>
+			<key>Processor</key>
+			<string>CodeSignatureVerifier</string>
 		</dict>
 	</array>
 </dict>
