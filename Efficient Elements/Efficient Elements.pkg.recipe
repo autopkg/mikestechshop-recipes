@@ -45,7 +45,7 @@
 		</dict>
 		<dict>
 			<key>Processor</key>
-			<string>com.github.triti.SharedProcessors/XMLReader</string>
+			<string>XMLReader</string>
 			<key>Arguments</key>
 			<dict>
 				<key>xml_path</key>
