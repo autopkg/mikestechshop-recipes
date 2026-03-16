@@ -45,7 +45,7 @@
 		</dict>
 		<dict>
 			<key>Processor</key>
-			<string>XMLReader</string>
+			<string>com.github.rtrouton.download.AdobeCreativeCloudInstaller/XMLReader</string>
 			<key>Arguments</key>
 			<dict>
 				<key>xml_path</key>
