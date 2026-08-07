@@ -16,7 +16,7 @@
          <string>Teams</string>
       </dict>
       <key>MinimumVersion</key>
-      <string>1.0.4</string>
+      <string>1.1</string>
       <key>ParentRecipe</key>
       <string>com.github.apettinen.download.MSTeams</string>
       <key>Process</key>

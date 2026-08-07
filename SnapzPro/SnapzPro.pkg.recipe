@@ -12,7 +12,7 @@
 		<string>SnapzPro</string>
 	</dict>
 	<key>MinimumVersion</key>
-	<string>1.0.4</string>
+	<string>1.1</string>
 	<key>ParentRecipe</key>
 	<string>com.github.poundbangbash.eholtam-recipes.download.SnapzPro</string>
 	<key>Process</key>

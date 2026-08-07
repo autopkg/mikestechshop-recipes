@@ -12,7 +12,7 @@
 		<string>Discord</string>
 	</dict>
 	<key>MinimumVersion</key>
-	<string>1.0.4</string>
+	<string>1.1</string>
 	<key>ParentRecipe</key>
 	<string>com.github.joshua-d-miller.download.Discord</string>
 	<key>Process</key>
