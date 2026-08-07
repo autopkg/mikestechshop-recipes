@@ -9,7 +9,7 @@ Download URLs
 arm64: https://desktop-downloads.asana.com/darwin_arm64/prod/latest/Asana.dmg
 x86_64: https://desktop-downloads.asana.com/darwin_x64/prod/latest/Asana.dmg
 universal (default): https://desktop-downloads.asana.com/darwin_universal/prod/latest/Asana.dmg
-    </string>
+</string>
 	<key>Identifier</key>
 	<string>com.github.mikestechshop.download.asana</string>
 	<key>Input</key>
