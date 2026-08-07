@@ -13,7 +13,7 @@
         <key>ARCHITECTURE</key>
         <string>x64</string>
         <key>DOWNLOAD_URL</key>
-        <string>https://storage.googleapis.com/dialpad_native/osx/%ARCHITECTURE%/Dialpad.dmg</string>
+        <string>https://download.dialpad.com/osx/%ARCHITECTURE%/Dialpad.dmg</string>
         <key>NAME</key>
         <string>Dialpad</string>
     </dict>
