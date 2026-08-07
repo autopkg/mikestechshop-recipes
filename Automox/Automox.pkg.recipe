@@ -11,31 +11,31 @@
 		<key>NAME</key>
 		<string>Automox</string>
 	</dict>
-	<key>ParentRecipe</key>
-	<string>com.github.mikestechshop.download.Automox</string>
 	<key>MinimumVersion</key>
 	<string>1.4.1</string>
+	<key>ParentRecipe</key>
+	<string>com.github.mikestechshop.download.Automox</string>
 	<key>Process</key>
 	<array>
 		<dict>
-			<key>Processor</key>
-			<string>Versioner</string>
 			<key>Arguments</key>
 			<dict>
 				<key>input_plist_path</key>
 				<string>%RECIPE_CACHE_DIR%/payload_unpack/Library/Application Support/Automox/Automox Notifier.app/Contents/Info.plist</string>
 			</dict>
+			<key>Processor</key>
+			<string>Versioner</string>
 		</dict>
 		<dict>
-			<key>Processor</key>
-			<string>PkgCopier</string>
 			<key>Arguments</key>
 			<dict>
-				<key>source_pkg</key>
-				<string>%RECIPE_CACHE_DIR%/Downloads/%NAME%.pkg</string>
 				<key>pkg_path</key>
 				<string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
+				<key>source_pkg</key>
+				<string>%RECIPE_CACHE_DIR%/Downloads/%NAME%.pkg</string>
 			</dict>
+			<key>Processor</key>
+			<string>PkgCopier</string>
 		</dict>
 	</array>
 </dict>
