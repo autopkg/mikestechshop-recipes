@@ -11,10 +11,10 @@
 		<key>NAME</key>
 		<string>BoxNotes</string>
 	</dict>
-	<key>ParentRecipe</key>
-	<string>com.github.mikestechshop.download.BoxNotes</string>
 	<key>MinimumVersion</key>
 	<string>1.4.1</string>
+	<key>ParentRecipe</key>
+	<string>com.github.mikestechshop.download.BoxNotes</string>
 	<key>Process</key>
 	<array>
 		<dict>

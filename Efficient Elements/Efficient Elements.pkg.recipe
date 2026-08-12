@@ -18,21 +18,19 @@
 	<key>Process</key>
 	<array>
 		<dict>
-			<key>Processor</key>
-			<string>FlatPkgUnpacker</string>
 			<key>Arguments</key>
 			<dict>
-				<key>flat_pkg_path</key>
-				<string>%pathname%</string>
 				<key>destination_path</key>
 				<string>%RECIPE_CACHE_DIR%/pkg_source</string>
+				<key>flat_pkg_path</key>
+				<string>%pathname%</string>
 				<key>purge_destination</key>
 				<true/>
 			</dict>
+			<key>Processor</key>
+			<string>FlatPkgUnpacker</string>
 		</dict>
 		<dict>
-			<key>Processor</key>
-			<string>PkgPayloadUnpacker</string>
 			<key>Arguments</key>
 			<dict>
 				<key>destination_path</key>
@@ -42,14 +40,12 @@
 				<key>purge_destination</key>
 				<true/>
 			</dict>
+			<key>Processor</key>
+			<string>PkgPayloadUnpacker</string>
 		</dict>
 		<dict>
-			<key>Processor</key>
-			<string>com.github.rtrouton.download.AdobeCreativeCloudInstaller/XMLReader</string>
 			<key>Arguments</key>
 			<dict>
-				<key>xml_path</key>
-				<string>%RECIPE_CACHE_DIR%/pkg_root/Library/Application Support/Microsoft/Office365/User Content.localized/Add-Ins.localized/Efficient Elements/Efficient Elements for presentations/Program/Program.xml</string>
 				<key>elements</key>
 				<array>
 					<dict>
@@ -62,22 +58,24 @@
 						<string>./setting[@name="version"]</string>
 					</dict>
 				</array>
+				<key>xml_path</key>
+				<string>%RECIPE_CACHE_DIR%/pkg_root/Library/Application Support/Microsoft/Office365/User Content.localized/Add-Ins.localized/Efficient Elements/Efficient Elements for presentations/Program/Program.xml</string>
 			</dict>
+			<key>Processor</key>
+			<string>com.github.rtrouton.download.AdobeCreativeCloudInstaller/XMLReader</string>
 		</dict>
 		<dict>
-			<key>Processor</key>
-			<string>PkgCopier</string>
 			<key>Arguments</key>
 			<dict>
-				<key>source_pkg</key>
-				<string>%pathname%</string>
 				<key>pkg_path</key>
 				<string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
+				<key>source_pkg</key>
+				<string>%pathname%</string>
 			</dict>
-		</dict>		
-		<dict>
 			<key>Processor</key>
-			<string>PathDeleter</string>
+			<string>PkgCopier</string>
+		</dict>
+		<dict>
 			<key>Arguments</key>
 			<dict>
 				<key>path_list</key>
@@ -86,6 +84,8 @@
 					<string>%RECIPE_CACHE_DIR%/pkg_source</string>
 				</array>
 			</dict>
+			<key>Processor</key>
+			<string>PathDeleter</string>
 		</dict>
 	</array>
 </dict>

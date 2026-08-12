@@ -44,14 +44,14 @@
 			<string>FlatPkgUnpacker</string>
 		</dict>
 		<dict>
-            <key>Arguments</key>
-            <dict>
-                <key>pattern</key>
-                <string>%RECIPE_CACHE_DIR%/unpack/Cloudflare*.pkg</string>
-            </dict>
-            <key>Processor</key>
-            <string>FileFinder</string>
-        </dict>
+			<key>Arguments</key>
+			<dict>
+				<key>pattern</key>
+				<string>%RECIPE_CACHE_DIR%/unpack/Cloudflare*.pkg</string>
+			</dict>
+			<key>Processor</key>
+			<string>FileFinder</string>
+		</dict>
 		<dict>
 			<key>Arguments</key>
 			<dict>
